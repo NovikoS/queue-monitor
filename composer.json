@@ -1,0 +1,31 @@
+{
+  "name": "highjin/event-monitor",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/napopravku/events"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Highjin\\EventMonitor\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "vladislav",
+      "email": "v.novikov@napopravku.ru"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "napopravku/events": "dev-master"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Highjin\\EventMonitor\\EventMonitor\\Laravel\\ServiceProvider"
+      ]
+    }
+  }
+}
